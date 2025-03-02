@@ -5,3 +5,25 @@
   display: flex;
   gap: 15px;
 }
+
+.Icons {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+}
+
+.PhoneNumber {
+  background-color: #4d61ff;
+  padding: 15px;
+  border-radius: 20%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.PhoneNumber:hover {
+  background-color: white;
+}
+
+/* "bg-[#4d61ff] p-3 rounded-full font-bold hover:bg-white transition-all duration-500 cursor-pointer" */

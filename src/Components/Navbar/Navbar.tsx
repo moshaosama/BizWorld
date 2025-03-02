@@ -1,9 +1,10 @@
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Container } from "../../Style";
 import Style from "./Navbar.module.css";
 import { NavLink } from "react-router";
 
 const Navbar = () => {
-  const { NavbarLink } = Style;
+  const { NavbarLink, Icons, PhoneNumber } = Style;
   return (
     <div className={Container}>
       <img
@@ -21,6 +22,13 @@ const Navbar = () => {
         <NavLink to={"/shop"}>SHOP</NavLink>
         <NavLink to={"/faq"}>FAQ</NavLink>
         <NavLink to={"/contact"}>CONTACT</NavLink>
+      </div>
+
+      <div className={Icons}>
+        <FaFacebook className="cursor-pointer" />
+        <FaInstagram className="cursor-pointer" />
+        <FaTwitter className="cursor-pointer" />
+        <div className={PhoneNumber}>+20 1004365707</div>
       </div>
     </div>
   );

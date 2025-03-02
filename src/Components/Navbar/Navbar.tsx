@@ -17,7 +17,7 @@ const Navbar = () => {
     }
   });
   return (
-    <div id="Navbar">
+    <div id="Navbar" className="sticky top-0">
       <div className={`${Container}`}>
         <img
           src="src\assets\logo-2n.png"

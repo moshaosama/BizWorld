@@ -1,0 +1,6 @@
+.Container {
+  margin: 3pc 15pc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

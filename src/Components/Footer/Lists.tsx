@@ -1,3 +1,4 @@
+import { useMemo } from "react";
 import { BiPhone } from "react-icons/bi";
 import { BsSkype } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";
@@ -77,17 +78,20 @@ export const HeaderFooterList = [
           <img
             src="https://xtratheme.com/elementor/business-2/wp-content/uploads/sites/18/2017/06/post1-1-150x150.jpg"
             alt="PlaceNews.png"
-            className="w-20 rounded-xl"
+            className="w-20 h-20 rounded-xl"
             loading="lazy"
+            decoding="async"
           />
           <p className="text-white font-bold">A Place of Slience</p>
         </div>
+
         <div className="flex items-center gap-2">
           <img
             src="https://xtratheme.com/elementor/business-2/wp-content/uploads/sites/18/2017/06/post2-1-150x150.jpg"
             alt="PlaceNews.png"
-            className="w-20 rounded-xl"
+            className="w-20 h-20 rounded-xl"
             loading="lazy"
+            decoding="async"
           />
           <p className="text-white font-bold">
             How to create a Logo like a Pro

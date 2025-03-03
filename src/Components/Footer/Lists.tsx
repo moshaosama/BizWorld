@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { BiPhone } from "react-icons/bi";
 import { BsSkype } from "react-icons/bs";
 import { ImLocation } from "react-icons/im";

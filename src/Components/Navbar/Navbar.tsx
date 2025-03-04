@@ -16,6 +16,7 @@ const Navbar = () => {
       }
     }
   });
+
   return (
     <div id="Navbar" className="sticky top-0">
       <div className={`${Container}`}>

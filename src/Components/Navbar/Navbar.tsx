@@ -21,7 +21,11 @@ const Navbar = () => {
 
   const NavLinkRender = useMemo(() => {
     return NavLinks?.map((el: { Title: string; To: string }, index: number) => {
-      return <NavLink to={el.To}>{el.Title}</NavLink>;
+      return (
+        <div key={index}>
+          <NavLink to={el.To}>{el.Title}</NavLink>
+        </div>
+      );
     });
   }, [NavLinks]);
 

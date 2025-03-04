@@ -2,6 +2,8 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Container } from "../../Style";
 import Style from "./Navbar.module.css";
 import { NavLink } from "react-router";
+import { useMemo } from "react";
+import { NavLinks } from "./Lists";
 
 const Navbar = () => {
   const { NavbarLink, Icons, PhoneNumber } = Style;
@@ -17,6 +19,12 @@ const Navbar = () => {
     }
   });
 
+  const NavLinkRender = useMemo(() => {
+    return NavLinks?.map((el: { Title: string; To: string }, index: number) => {
+      return <NavLink to={el.To}>{el.Title}</NavLink>;
+    });
+  }, [NavLinks]);
+
   return (
     <div id="Navbar" className="sticky top-0">
       <div className={`${Container}`}>
@@ -27,15 +35,7 @@ const Navbar = () => {
           className="w-54"
         />
 
-        <div className={NavbarLink}>
-          <NavLink to={"/"}>HOME</NavLink>
-          <NavLink to={"/about"}>ABOUT</NavLink>
-          <NavLink to={"/services"}>SERVICES</NavLink>
-          <NavLink to={"/blogs"}>BLOG</NavLink>
-          <NavLink to={"/shop"}>SHOP</NavLink>
-          <NavLink to={"/faq"}>FAQ</NavLink>
-          <NavLink to={"/contact"}>CONTACT</NavLink>
-        </div>
+        <div className={NavbarLink}>{NavLinkRender}</div>
 
         <div className={Icons}>
           <FaFacebook className="cursor-pointer" />

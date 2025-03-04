@@ -1,4 +1,4 @@
-const NavLinks = [
+export const NavLinks = [
   {
     Title: "HOME",
     To: "home",

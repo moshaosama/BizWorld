@@ -8,16 +8,16 @@ import { NavLinks } from "./Lists";
 const Navbar = () => {
   const { NavbarLink, Icons, PhoneNumber } = Style;
 
-  window.addEventListener("scroll", () => {
-    const Navbar = document.getElementById("Navbar");
-    if (Navbar) {
-      if (window.scrollY >= 10) {
-        Navbar.style.setProperty("background-color", "red");
-      } else {
-        Navbar.style.setProperty("background-color", "transparent");
-      }
-    }
-  });
+  // window.addEventListener("scroll", () => {
+  //   const Navbar = document.getElementById("Navbar");
+  //   if (Navbar) {
+  //     if (window.scrollY >= 10) {
+  //       Navbar.style.setProperty("background-color", "red");
+  //     } else {
+  //       Navbar.style.setProperty("background-color", "transparent");
+  //     }
+  //   }
+  // });
 
   const NavLinkRender = useMemo(() => {
     return NavLinks?.map((el: { Title: string; To: string }, index: number) => {

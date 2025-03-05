@@ -8,16 +8,16 @@ import { NavLinks } from "./Lists";
 const Navbar = () => {
   const { NavbarLink, Icons, PhoneNumber } = Style;
 
-  // window.addEventListener("scroll", () => {
-  //   const Navbar = document.getElementById("Navbar");
-  //   if (Navbar) {
-  //     if (window.scrollY >= 10) {
-  //       Navbar.style.setProperty("background-color", "red");
-  //     } else {
-  //       Navbar.style.setProperty("background-color", "transparent");
-  //     }
-  //   }
-  // });
+  window.addEventListener("scroll", () => {
+    const Navbar = document.getElementById("Navbar");
+    if (Navbar) {
+      if (window.scrollY >= 10) {
+        Navbar.style.setProperty("background-color", "rgba(0, 0, 0, 0.78)");
+      } else {
+        Navbar.style.setProperty("background-color", "transparent");
+      }
+    }
+  });
 
   const NavLinkRender = useMemo(() => {
     return NavLinks?.map((el: { Title: string; To: string }, index: number) => {
@@ -30,7 +30,7 @@ const Navbar = () => {
   }, [NavLinks]);
 
   return (
-    <div id="Navbar" className="sticky top-0">
+    <div id="Navbar" className="sticky top-0 py-1">
       <div className={`${Container}`}>
         <img
           src="src\assets\logo-2n.png"

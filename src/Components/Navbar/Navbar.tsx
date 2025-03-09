@@ -30,7 +30,7 @@ const Navbar = () => {
   }, [NavLinks]);
 
   return (
-    <div id="Navbar" className="sticky top-0 py-1">
+    <div id="Navbar" className="sticky top-0 py-1 z-50">
       <div className={`${Container}`}>
         <img
           src="src\assets\logo-2n.png"

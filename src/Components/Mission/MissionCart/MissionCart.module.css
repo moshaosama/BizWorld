@@ -7,7 +7,7 @@
   border-radius: 1pc;
 }
 .Image::before {
-  content: "Very Useful Elements For Perfect Flow";
+  content: var(--content);
   position: absolute;
   bottom: 150px;
   left: 0;

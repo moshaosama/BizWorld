@@ -12,3 +12,16 @@ export const OurTeamList = [
     About: "Ui/Ux Designer",
   },
 ];
+
+export const FiguresList = [
+  {
+    Image:
+      "https://xtratheme.com/elementor/business-2/wp-content/uploads/sites/18/2017/11/fh1-1.jpg",
+    Title: "We’re better than the rest.",
+  },
+  {
+    Image:
+      "https://xtratheme.com/elementor/business-2/wp-content/uploads/sites/18/2017/11/fh2-1-1.jpg",
+    Title: " Compete on value, not on price.",
+  },
+];

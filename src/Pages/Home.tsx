@@ -1,5 +1,11 @@
-import { Elementor, Mission, OurService, PageCover } from "../Components";
-import OurTeam from "../Components/OurTeam/OurTeam";
+import {
+  Details,
+  Elementor,
+  Mission,
+  OurService,
+  OurTeam,
+  PageCover,
+} from "../Components";
 
 const Home = () => {
   return (
@@ -9,6 +15,7 @@ const Home = () => {
       <Mission />
       <OurService />
       <OurTeam />
+      <Details />
     </>
   );
 };

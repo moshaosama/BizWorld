@@ -32,12 +32,7 @@ const Navbar = () => {
   return (
     <div id="Navbar" className="sticky top-0 py-1 z-50">
       <div className={`${Container}`}>
-        <img
-          src="src\assets\logo-2n.png"
-          alt="Logo.png"
-          loading="lazy"
-          className="w-54"
-        />
+        <img src="logo-2n.png" alt="Logo.png" loading="lazy" className="w-54" />
 
         <div className={NavbarLink}>{NavLinkRender}</div>
 

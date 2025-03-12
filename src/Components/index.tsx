@@ -5,6 +5,8 @@ import Elementor from "./Elementor/Elementor";
 import ServiceCom from "./OurService/ServiceComponent/ServiceCom";
 import Mission from "./Mission/Mission";
 import OurService from "./OurService/OurService";
+import OurTeam from "./OurTeam/OurTeam";
+import Details from "./Details/Details";
 
 export {
   Navbar,
@@ -14,4 +16,6 @@ export {
   ServiceCom,
   Mission,
   OurService,
+  OurTeam,
+  Details,
 };

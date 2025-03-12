@@ -1,4 +1,5 @@
 import { Elementor, Mission, OurService, PageCover } from "../Components";
+import OurTeam from "../Components/OurTeam/OurTeam";
 
 const Home = () => {
   return (
@@ -7,6 +8,7 @@ const Home = () => {
       <Elementor />
       <Mission />
       <OurService />
+      <OurTeam />
     </>
   );
 };

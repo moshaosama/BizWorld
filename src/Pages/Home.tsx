@@ -1,6 +1,4 @@
-import { Elementor, PageCover } from "../Components";
-import Mission from "../Components/Mission/Mission";
-import OurService from "../Components/OurService/OurService";
+import { Elementor, Mission, OurService, PageCover } from "../Components";
 
 const Home = () => {
   return (

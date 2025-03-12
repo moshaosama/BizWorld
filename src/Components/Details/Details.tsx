@@ -1,4 +1,6 @@
 import { Container } from "../../Style";
+import DetailsAbout from "./DetailsAbout/DetailsAbout";
+import DetailsNumber from "./DetailsNumber/DetailsNumber";
 
 const Details = () => {
   return (
@@ -11,6 +13,10 @@ const Details = () => {
         <p className="text-gray-500 text-lg">
           We're here to help you to finding a best way
         </p>
+        <div>
+          <DetailsNumber />
+          <DetailsAbout />
+        </div>
       </div>
     </div>
   );

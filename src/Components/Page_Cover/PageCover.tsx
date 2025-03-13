@@ -23,7 +23,7 @@ const PageCover = () => {
         </div>
         <div>
           <img
-            src="public/depositphotos_58797721-Young-black-businessman-outdoor-removebg-preview.png"
+            src="depositphotos_58797721-Young-black-businessman-outdoor-removebg-preview.png"
             alt=""
             className="w-[900pc]"
           />

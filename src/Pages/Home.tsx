@@ -6,6 +6,7 @@ import {
   OurTeam,
   PageCover,
 } from "../Components";
+import LanguageComponent from "../Components/LanguagesComponent/LanguageComponent";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <OurService />
       <OurTeam />
       <Details />
+      <LanguageComponent />
     </>
   );
 };

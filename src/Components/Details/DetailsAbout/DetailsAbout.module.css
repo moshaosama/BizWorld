@@ -1,0 +1,40 @@
+/* className="flex justify-center mt-20" */
+.Header {
+  display: flex;
+  justify-content: center;
+  margin-top: 5pc;
+  gap: 50px;
+}
+/* className="bg-black w-1/2 py-1 shadow-xl shadow-[#4d61ff]" */
+.Card {
+  background-color: black;
+  width: 50%;
+  padding: 0.25rem 0px;
+}
+
+/* className="bg-white flex justify-center relative rounded-3xl py-14 m-1"
+ */
+.Card_Content {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 20px;
+  padding: 3pc 0px;
+  margin: 0.25rem;
+}
+
+/* className="w-20 h-20  object-cover rounded-full" */
+.Image {
+  width: 50px;
+  height: 50px;
+  border-radius: 20pc;
+}
+/* className="flex justify-center flex-col gap-6 items-center" */
+.DetailsAboutMe {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}

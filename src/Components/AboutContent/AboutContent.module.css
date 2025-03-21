@@ -1,0 +1,11 @@
+.Image {
+  width: 30pc;
+  border-radius: 1pc;
+}
+
+.Image::before {
+  background-image: url("https://xtratheme.com/elementor/business-2/wp-content/uploads/sites/18/2021/08/dot.png");
+  top: 60px;
+  left: -11px;
+  filter: invert(1);
+}

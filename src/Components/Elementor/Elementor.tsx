@@ -8,7 +8,7 @@ const Elementor = () => {
       return (
         <div key={index}>
           <div
-            className={`flex bg-[#2d3033] gap-5 rounded-xl py-6 px-10  w-fit`}
+            className={`flex bg-[#2d3033] hover:border-b-[2px] transition-all duration-100 hover:border-[#4d61ff] gap-5 rounded-xl py-6 px-10  w-fit`}
           >
             <div className="bg-[#4d61ff] text-white text-4xl p-3 rounded-full">
               {el.Icon}

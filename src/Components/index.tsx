@@ -7,6 +7,7 @@ import Mission from "./Mission/Mission";
 import OurService from "./OurService/OurService";
 import OurTeam from "./OurTeam/OurTeam";
 import Details from "./Details/Details";
+import AboutContent from "./AboutContent/AboutContent";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   OurService,
   OurTeam,
   Details,
+  AboutContent,
 };

@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { LanguagesList } from "./LanguagesList";
 import { Container } from "../../Style";
+import Marquee from "react-fast-marquee";
 
 type LanguageListType = { Image: string };
 
@@ -23,7 +24,7 @@ const LanguageComponent = () => {
         className={`${Container}`}
         style={{ margin: "5pc 0pc", justifyContent: "center" }}
       >
-        {LanguageListRender}
+        <Marquee>{LanguageListRender}</Marquee>
       </div>
     </>
   );

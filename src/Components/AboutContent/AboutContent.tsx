@@ -44,7 +44,7 @@ const AboutContent = memo(
       >
         <div className="text-white w-1/2 flex flex-col gap-10">
           <h1 className="font-bold text-3xl">{Header}</h1>
-          <p className="text-xl font-serif ">{Text}</p>
+          <p className="text-xl font-serif ">{Text}ana</p>
           <div>{ShowCheckBox ? <CheckBox /> : null}</div>
         </div>
         <div>

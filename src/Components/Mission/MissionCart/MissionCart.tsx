@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { Container } from "../../../Style";
 import style from "./MissionCart.module.css";
+import clsx from "clsx";
 
 const MissionCart = () => {
   const { Image } = style;
@@ -24,30 +25,32 @@ const MissionCart = () => {
   ];
 
   const ImageRender = useMemo(() => {
-    return ImageUrl.map(
-      (el: { Src: string; Content: string }, index: number) => {
-        return (
-          <div
-            key={index}
-            className={`${Image} object-contain`}
-            style={
-              {
-                "--content": `"${el.Content}"`,
-                backgroundImage: `url(${el.Src})`,
-              } as React.CSSProperties
-            }
-          >
-            <div className="w-full flex justify-center">
-              <button className="bg-[#4d61ff] font-bold absolute bottom-10 z-50 opacity-95 text-white w-40 rounded-full p-2">
-                more details
-              </button>
+    return (
+      <>
+        {ImageUrl.map((el: { Src: string; Content: string }, index: number) => {
+          return (
+            <div
+              key={index}
+              className={`${Image} object-contain hover:scale-105 transition-all duration-500 group`}
+              style={
+                {
+                  "--content": `"${el.Content}"`,
+                  backgroundImage: `url(${el.Src})`,
+                } as React.CSSProperties
+              }
+            >
+              <div className="w-full hidden group-hover:flex  justify-center">
+                <button className="bg-[#4d61ff] font-bold absolute bottom-10 z-50 opacity-95 text-white w-40 rounded-full p-2">
+                  more details
+                </button>
+              </div>
             </div>
-          </div>
-        );
-      }
+          );
+        })}
+      </>
     );
   }, [ImageUrl]);
-  return <div className={Container}>{ImageRender}</div>;
+  return <div className={clsx(Container)}>{ImageRender}</div>;
 };
 
 export default MissionCart;

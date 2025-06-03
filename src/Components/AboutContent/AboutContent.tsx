@@ -3,6 +3,7 @@ import { Container } from "../../Style";
 import Style from "./AboutContent.module.css";
 import { HiCheck } from "react-icons/hi2";
 import { CheckOutTextList } from "./AboutContentList";
+import clsx from "clsx";
 
 type AboutContentProps = {
   flexDirection: "row" | "row-reverse";
@@ -47,11 +48,14 @@ const AboutContent = memo(
           <p className="text-xl font-serif ">{Text}ana</p>
           <div>{ShowCheckBox ? <CheckBox /> : null}</div>
         </div>
-        <div>
+        <div className="overflow-hidden">
           <img
             src="https://xtratheme.com/elementor/business-2/wp-content/uploads/sites/18/2017/11/tt1-1.jpg"
             alt="AboutCompany.png"
-            className={Image}
+            className={clsx(
+              Image,
+              "transition-all duration-300 hover:scale-110"
+            )}
           />
         </div>
       </div>
